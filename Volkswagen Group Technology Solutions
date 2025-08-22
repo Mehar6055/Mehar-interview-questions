@@ -1,0 +1,22 @@
+🚀 DevOps Interview Experience – Volkswagen Group Technology Solutions India(Azure DevOps Engineer)
+🔧 Linux | Azure | Kubernetes | Terraform | CI/CD | CloudOps
+
+1. What is the difference between Internet Gateway and NAT Gateway?
+2. How do you decide between VPC Peering and Transit Gateway?
+3. Why is Transit Gateway more costly than VPC Peering?
+4. How do you use API Gateway and when would you choose public vs private APIs?
+5. Explain the difference between S3, DynamoDB, and RDS.
+6. What are the key benefits of cloud migration?
+7. How do you ensure security in AWS?
+8. How do you manage large migrations in Terraform?
+9. What are the limitations of auto-generated Terraform code?
+10. How do you secure secrets in Terraform (tools like Lowkey, SSM, Vault)?
+11. What are the best practices missing in a simple Terraform S3 bucket config?
+12. What are the common pod errors in Kubernetes (e.g., CrashLoopBackOff, OOMKilled)?
+13. How do you size an EKS cluster for a project?
+14. What happens if a microservice pod fails due to port already in use?
+15. How do you enable autoscaling in Kubernetes?
+16. How do you create Grafana queries for metrics like CPU, memory, error rate?
+17. What steps do you take when Grafana dashboards load slowly?
+18. What are Beats in the ELK stack and their use cases?
+19. How do you diagnose findings in AWS Inspector?
