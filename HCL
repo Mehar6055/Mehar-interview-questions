@@ -17,3 +17,36 @@ If you're preparing for 𝗔𝗪𝗦 𝗗𝗲𝘃𝗢𝗽𝘀 roles, this might 
 14. What’s your understanding of dynamic auto scaling in AWS?
 15. Can you explain the key differences between AWS Security Groups and Network ACLs?
 16. Which AWS services have you worked with most, and how have you used them in your DevOps projects?
+
+
+ HCL DevOps Interview Questions ----Azure
+
+1. Explain your CI/CD pipeline design. Which tools did you use and why?
+2. How do you create a Jenkins pipeline for multi-environment deployment.
+3. How do you handle Jenkins pipeline failures? Give a real-time example.
+4. Have you integrated code quality tools like SonarQube? if Yes, How? 
+5. How do you write a production-ready Dockerfile?
+6. Difference between CMD and ENTRYPOINT in Docker?
+7. What is Docker Compose and where have you used it?
+8. Explain how container orchestration works and why it’s important.
+9. What are Pods, Deployments, and Services in Kubernetes?
+10. How do you perform a rolling update in Kubernetes using a YAML file?
+11. What’s a ConfigMap and Secret in k8s?
+12. How do you handle resource limits and requests in Kubernetes?
+13. How do you manage infrastructure using Terraform in Azure/AWS?
+14. What is the use of Terraform backend? 
+15. How do you securely store secrets in cloud pipelines?
+16. Explain how you set up an auto-scaling group in cloud using Terraform.
+17. How do you manage role-based access control in Jenkins or Kubernetes?
+18. How do you rollback a faulty deployment using Git and CI tools?
+19. Explain Gitflow and how your team used branching strategies in    DevOps.
+20. Write a complete Jenkins pipeline code (Declarative Pipeline).
+21. What is taint and untaint in Terraform?
+
+🔹 Practical Assignments
+22. Write a Bash script to add two numbers.
+23. Write a Bash script to find the biggest file in a certain folder.
+24. Using Terraform, create a complete infra (after sketching on whiteboard):
+Create a VPC with Public & Private Subnet
+Launch two EC2 instances (one in public subnet, one in private subnet)
+Install Nginx on both instances using user_data.
