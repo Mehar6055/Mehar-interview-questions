@@ -1,0 +1,16 @@
+3 You manually created a test environment; now recreate it for production.	I exported the test setup to Terraform code using HCL, parameterized values for prod, stored state remotely, and automated the apply process through Jenkins. This ensured both environments were identical, version-controlled, and quick to reproduce.
+
+4	A user reports slow web app and 500 errors—how do you find root cause?	I’d check Azure Monitor and Application Insights for CPU, memory, and exception trends, then inspect AKS pod metrics via Prometheus. In one case, pods were OOM-killed; I increased pod limits, tuned DB pools, and added autoscaling, which eliminated 500 errors.
+
+5	Deploy 10 VMs with same config but different names/IPs—how?	I’d use Terraform with a loop (for_each or count) to define one VM template and generate ten instances with unique names and IPs. Jenkins would trigger terraform apply, creating identical, scalable infrastructure automatically.
+
+6	Why are alerts not triggering even when CPU is high?	Likely due to misconfigured thresholds, evaluation frequency, or wrong metric scope. I’d verify that Azure Monitor or Prometheus is receiving correct CPU data, check if the alert rule uses proper aggregation and time window, and confirm action groups are valid.
+
+7	How would you verify metrics are being collected?	I’d check agent/exporter status on VMs or pods, query metrics directly in Azure Metrics Explorer or Prometheus UI, validate namespaces and labels, and compare with logs. In one project, restarting a stopped Azure Monitor agent fixed missing metrics.
+
+8	Explain Evolution, Granularity, and Frequency of Evaluation.	Evaluation means how often alert rules are checked; Granularity is how often data points are collected; Frequency defines how often alerts run. In Azure Monitor I use 1-min granularity and 5-min evaluation to balance accuracy and cost.
+
+9	What is Adaptive Sampling in Azure Application Insights?	Adaptive Sampling automatically adjusts telemetry collection based on load to reduce data volume and cost. I enabled it in Application Insights to dynamically sample fewer requests during peak traffic, maintaining performance without losing key insights.
+
+10	You deployed a template with five resources, success shown but one resource missing—how check?
+
